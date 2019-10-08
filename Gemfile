@@ -11,7 +11,7 @@ gem "jekyll"
 gem 'rake'
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima"
-gem 'github-pages'
+# gem 'github-pages'
 gem 'jekyll-scholar'
 gem 'citeproc-ruby'
 gem 'csl-styles'
