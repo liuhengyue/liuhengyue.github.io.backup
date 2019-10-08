@@ -1,1 +1,16 @@
-.idea
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+.DS_Store
+doc
+.yardoc
+.rbx
+*.rbc
+coverage
+.bundle
+.ruby-version
+*.swp
+.byebug_history

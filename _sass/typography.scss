@@ -1,0 +1,94 @@
+@import "vars";
+
+.content {
+    a:hover {
+        text-decoration: underline;
+    }
+    ol {
+        counter-reset: list;
+    }
+    ol > li {
+        list-style-position: none;
+        position: relative;
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    ul > li {
+        margin: 5px 0 5px 0;
+    }
+    ul {
+        padding: 0 20px 0 20px;;
+    }
+    ol {
+        padding: 0 40px 0 40px;
+    }
+    ol > li:before {
+        content: "[" counter(list, decimal) "]   ";
+        counter-increment: list;
+        position: absolute;
+        left: -40px;
+    }
+    blockquote {
+        //border: 1px solid black;
+        border-left: 5px solid #333333;
+        margin: 20px 0 20px 0;
+        padding: 2px 8px 2px 8px;
+        font-style: italic;
+    }
+    .profile-picture {
+        height: $image-size;
+        width: $image-size;
+        position: relative;
+        margin: -10px 0 0 15px;
+        float: right;
+        border-radius: 50%;
+        p & {
+            padding: 0;
+            margin: 0;
+        }
+        @media (max-width: $small-width) {
+            img {
+                margin-top: -5px;
+            }
+        }
+    }
+    img {
+        text-align: center;
+        width: 100%;
+    }
+
+// my customization
+.dropDownBibtex, .dropDownAbstract{
+    display: none; 
+}
+
+button{
+    font-family: "Inconsolata";
+    cursor:pointer;
+}
+
+.btnId {
+    margin-top: 5px;
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.btnId:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+}
