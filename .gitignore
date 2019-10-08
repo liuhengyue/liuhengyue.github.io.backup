@@ -14,3 +14,4 @@ coverage
 .ruby-version
 *.swp
 .byebug_history
+tmpdir/
