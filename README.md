@@ -1,8 +1,11 @@
-# Researcher
+# liuhengyue.github.io
 
-### [Demo Website](http://ankitsultana.com/researcher)
+A clean, single column, monospace resume template built for jekyll. Template provided by [researcher](https://github.com/ankitsultana/researcher).
 
-A clean, single column, monospace resume template built for jekyll
+
+### Before Use It
+
+Jekyll is new to me, so install and test it first from [Jekyll](https://jekyllrb.com/docs/).
 
 ### Installation
 
