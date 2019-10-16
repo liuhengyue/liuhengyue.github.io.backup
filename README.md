@@ -7,6 +7,8 @@ A clean, single column, monospace resume template built for jekyll. Template pro
 
 Jekyll is new to me, so install and test it first from [Jekyll](https://jekyllrb.com/docs/).
 
+I use a gem called 'jekyll-scholar' which is not supported by github page for build automation, so the solution to that is to generate static pages and push to master branch (my `source` branch contains the source jekyll stuff). `Rake` can do the job for you. You need to change the git repo name in `Rakefile`, then just run `rake publish` which will generate the static sites then push to `master`. Note you may need to commit changes to `source` branch.
+
 ### Installation
 
 Simply fork the repository and edit away.

@@ -5,7 +5,7 @@ require "bundler/setup"
 require "jekyll"
 
 
-# Change your GitHub reponame
+# Change your GitHub repo name
 GITHUB_REPONAME = "liuhengyue/liuhengyue.github.io"
 
 
@@ -18,7 +18,7 @@ task :generate do
 end
 
 
-desc "Generate and publish blog to gh-pages"
+desc "Generate and publish blog to master branch"
 task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp
