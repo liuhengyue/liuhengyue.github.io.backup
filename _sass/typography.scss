@@ -80,7 +80,18 @@ button{
     display: inline-block;
     transition: all 0.3s ease 0s;
 }
-@media(hover: hover) and (pointer: fine){
+
+.btnId:hover {
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: none;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    }
+    
+@media (hover: none){
     .btnId:hover {
         color: #404040 !important;
         font-weight: 700 !important;
