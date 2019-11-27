@@ -2,10 +2,10 @@
 ---
 {{reference | replace_first: 'Liu, H.', '<b>Liu, H.</b>'}}
     {% if entry.abstract %}
-    <button class="btn btnId btnPub--abstract" id="b_{{key}}-abstract" style="outline:none;">Abstract</button>
+    <button class="btn btnId btnPub--abstract" id="b_{{key}}-abstract" onclick="activate(event, '{{key}}-abstract')" style="outline:none;">Abstract</button>
     {% endif %}
 
-    <button class="btn btnId btnPub--BibTex" id="b_{{key}}-bibtex" style="outline:none;">BibTeX</button>
+    <button class="btn btnId btnPub--BibTex" id="b_{{key}}-bibtex" onclick="activate(event, '{{key}}-bibtex')" style="outline:none;">BibTeX</button>
     
     {% if link %}
     <a href="{{link}}" target="_blank"><button class="btn btnId btnPub--download" style="outline:none; position:relative;white-space: normal;">PDF</button></a>
@@ -15,11 +15,11 @@
     <a href="{{links['sup.pdf']}}" target="_blank"><button class="btn btnId btnPub--supplement" style="outline:none; position:relative;white-space: normal;">Supplement</button></a>
     {% endif %}
 
-    <div class="dropDownBibtex" id="{{key}}-bibtex">
+    <div class="dropDown dropDownBibtex" id="{{key}}-bibtex">
     <pre>{{entry.bibtex}}</pre>
     </div>
     
-    <div class="dropDownAbstract" id="{{key}}-abstract">
+    <div class="dropDown dropDownAbstract" id="{{key}}-abstract">
     {% quote %}
     {{entry.abstract}}
     {% endquote %}

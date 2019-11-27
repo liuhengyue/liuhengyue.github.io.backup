@@ -119,17 +119,11 @@
 </body>
 <footer>
 <script>
-$(document).ready(function(){
-    var str =$(this).attr('id');
-    
-    $(".btnId").click(function(){
-        var str = $(this).attr('id');
-        var id = str.replace("b_", "");
-        // console.log(ret);
-        // var id = ret[1];
-        // console.log(id);
-        $('#' + id).toggle();
-    });
-});
+function activate(evt, key){
+    var tab_show = $('#' + key)
+    tab_show.toggle();
+    $('.dropDown').not(tab_show).hide();
+}
+
 </script>    
 </footer>
